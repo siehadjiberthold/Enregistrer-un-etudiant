@@ -27,12 +27,12 @@ function handleSaveStudent() {
   let studentsWeight = document.createElement('div')
   let studentsGender = document.createElement('div')
   let studentsDateOfB = document.createElement('div')
-  studentsName.innerHTML = `<div  ><span class="fw-bold">Name : </span>${fname.value + ' ' + sname.value} </div>`
-  studentplaceOfB.innerHTML = `<div><span class="fw-bold">Place of birth : </span>${placeOfB.value}</div>`
-  studentsPar.innerHTML = `<div  ><span class="fw-bold">Parcour : </span> ${parcour.value} </div>`
-  studentsWeight.innerHTML = `<div   class="fw-bold"><span class="fw-bold">Weight : </span> ${poid.value}Kg, <span class="fw-bold">Height : </span>${height.value} M </div>`
-  studentsGender.innerHTML = `<div  class="fw-bold"><span class="fw-bold">Gender : </span> ${gender} </div>`
-  studentsDateOfB.innerHTML = `<div  class="fw-bold"><span class="fw-bold">Date of birth : </span> ${dateOfBirth.value} </div>`
+  studentsName.innerHTML = `<div  ><span class="fw-bold">Nom : </span>${fname.value + ' ' + sname.value} </div>`
+  studentplaceOfB.innerHTML = `<div><span class="fw-bold">Lieu de naissance : </span>${placeOfB.value}</div>`
+  studentsPar.innerHTML = `<div  ><span class="fw-bold">parcours : </span> ${parcour.value} </div>`
+  studentsWeight.innerHTML = `<div   class="fw-bold"><span class="fw-bold">Poids : </span> ${poid.value}Kg, <span class="fw-bold">Taille : </span>${height.value} M </div>`
+  studentsGender.innerHTML = `<div  class="fw-bold"><span class="fw-bold">genre : </span> ${gender} </div>`
+  studentsDateOfB.innerHTML = `<div  class="fw-bold"><span class="fw-bold">Date de naissance : </span> ${dateOfBirth.value} </div>`
 
   // Appending to the parent container in HTML
   studentsInfoContainer.appendChild(studentsName)
