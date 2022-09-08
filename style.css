@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.formContainer {
+    width: 520px;
+    border-radius: 15px;
+    padding: 20px;
+    background: pink;
+    margin: 70px;
+}
+
+.students {
+    margin: 70px;
+}
+
+.title {
+    margin: 0px 20px;
+    font-size: 1.2rem;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: bold;
+
+}
+
+form {
+    width: 100%;
+}
+
+.formPart1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.formPart1 input,
+select {
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+select {
+    width: 100%;
+}
+
+.part1 {
+    width: 50%;
+    padding: 20px;
+}
+
+.poid {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.poid input {
+    width: 95%;
+}
+
+/* .poid.mark input{
+    width: 100%;
+} */
+.sex {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.sex1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sex1 input {
+    width: 15px;
+    margin: 10px 5px;
+    accent-color: grey;
+}
+
+.dateOfBirth input {
+    width: 100%;
+    padding: 10px;
+}
+
+.notes input {
+    height: 30px;
+    /* width: 100%; */
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.btn-save {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tableRow {
+    display: flex;
+}

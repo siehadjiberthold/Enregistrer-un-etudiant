@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>enregistrement d'un etudiant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-fluid border">
+        <div class="row">
+            <div class="col-5">
+                <div class="formContainer">
+                    <label class="title">Enregistrer un etudiant </label>
+                    <form action="">
+
+                        <div class="formPart1">
+
+
+                            <div class="part1">
+
+                                <label for="name">Nom</label>
+                                <input type="text" id="name">
+                                <label for="sname">Prenom</label>
+                                <input type="text" id="sname">
+                                <label for="placeOfB">Lieu de naissance</label>
+                                <input type="text" id="placeOfB">
+                            </div>
+                            <div class="part1">
+
+                                <label for="name">Parcours</label>
+                                <select name="" id="parcour">
+                                    <option value="Data Science">Data Science</option>
+                                    <option value="Web Development">Developement web</option>
+                                    <option value="Art Numerique">Art Numerique</option>
+                                </select>
+                                <div class="poid">
+                                    <div class="">
+                                        <label for="poid">Poids</label>
+                                        <input type="text" id="poid">
+
+                                    </div>
+                                    <div class="">
+                                        <label for="height">Taille</label>
+                                        <input type="text" id="height">
+
+                                    </div>
+                                </div>
+                                <div class="sex">
+                                    <div class="sex1">
+                                        <label for="male">Homme</label>
+                                        <input type="radio" id="Male" name="sexe" value="male">
+
+                                    </div>
+                                    <div class="sex1">
+                                        <label for="female">Femme</label>
+                                        <input type="radio" id="Female" name="sexe" value="female">
+
+                                    </div>
+                                </div>
+                                <div class="dateOfBirth">
+                                    <label for="dateOfBirth">Date de naissance</label>
+                                    <input type="date" name="dateOfBirth" id="dateOfBirth">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="part1">
+
+                        <label for="name">Notes</label>
+                        <div class="poid " style="padding:10px 0px;">
+
+                            <div class="notes">
+                                <label for="subject">Matiere</label>
+                                <input type="text" id="subject">
+
+                            </div>
+                            <div class="notes">
+                                <label for="note">Note</label>
+                                <input type="text" id="note">
+
+                            </div>
+
+                            <div style="height: 80px; display: flex; align-items:center; ">
+                                <button class="btn btn-sm btn-light" onclick="handleSaveMark()">Ajouter</button>
+
+                            </div>
+                        </div>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+
+                                    <th scope="col">Matiere</th>
+                                    <th scope="col">Note</th>
+                                    <th scope="col">Action</th>
+                                </tr>
+
+                            </thead>
+                            <tbody id="markContainer">
+
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                    <div class="btn-save">
+                        <div class="btn btn-lg btn-light" onclick="handleSaveStudent()">Enregistrer l'étudiant</div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-7 ">
+                <div class="students border p-3">
+                    <div class="container" id="studentsInfoRow">
+                        <h3 class="h3 text-center">liste des étudiants et leurs notes</h3>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
